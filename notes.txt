@@ -1,0 +1,22 @@
+#include "raylib.h"
+#include <vector>
+#include <map>
+#include <utility>
+#include <cmath>
+
+int main() {
+
+    const int screen_height = 800;
+    const int screen_width = 1280;
+    InitWindow(screen_width, screen_height, "My Game");
+    SetTargetFPS(60);
+
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        DrawCircle(screen_width/2, screen_height/2, 20, RED);
+        EndDrawing();
+    }
+
+    CloseWindow();
+    return 0;
+}
